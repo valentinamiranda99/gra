@@ -6,14 +6,43 @@
 <style type="text/css">
 body {
     margin: 0px;
+    background-image: url(rapanui.jpeg);
+    background-size: cover;
+    height: 100vh;
+}
+#Tabs1 div {
+    background-color: rgba(255,255,255,0.26);
+	align-items: center;
+	justify-content: center;
+	display:flex;
+}
+#Tabs1 ul {
+    background-image: none;
+    border: none;
+    background-color: rgba(255,255,255,0.46);
+	align-items: center;
+	justify-content: center;
+	display:flex;
+}
+#Tabs1  {
+    background-image: none;
+    background-color: rgba(255,255,255,0.42);
+}
+#Tabs1 ul li {
+    background-image: none;
+    background-color: rgba(255,255,255,0.46);
+}
+#Tabs1 ul li :hover  {
+    background-color: rgba(255,255,255,1.00);
 }
 #Tabs1 img {
     width: 60px;
     height: auto;
+	
 }
 header {
     height: 100px;
-    background-color: rgba(255,42,133,1.00);
+    padding-bottom: 70px;
 }
 wrapper {
     width: 1200px;
@@ -25,6 +54,26 @@ wrapper {
 }
 #Tabs1 li {
 }
+#Tabs1 .search {
+}
+#Tabs3 .search {
+}
+.logo {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    margin-left: 500px;
+    position: absolute;
+    -webkit-box-shadow: 0px 0;
+    box-shadow: 0px 0;
+}
+.foot {
+    font-style: normal;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    color: rgba(0,0,0,1.00);
+    background-color: rgba(255,255,255,0.58);
+    margin-top: 250px;
+}
 </style>
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
@@ -35,7 +84,7 @@ wrapper {
 
 <body>
 <wrapper>
-  <header></header>
+  <header><img src="logo.png" alt="" width="500" height="300" class="logo"></header>
   <main></main>
   <div id="Tabs1">
     <ul>
@@ -56,22 +105,44 @@ wrapper {
       </a></li>
     </ul>
     <div id="tabs-1">
-      <p>Content 1</p>
+      <p>Search your Flight&nbsp; &nbsp;</p>
+      <input type="text" placeholder="Leaving to"><input type="date"><input type="text" placeholder="Going to"><input type="date"><select>
+        <option value="1">Number of Travelers</option>
+        <option value="2">1</option>
+        <option value="3">2</option>
+        <option value="4">3</option>
+        <option value="5">4</option>
+        <option>5</option>
+      </select><input type="submit" class="search">
     </div>
     <div id="tabs-2">
-      <p>Content 2</p>
+      <p>Search your Hotel</p><input type="text" placeholder="Where to?"><input type="date"><input type="date"><select>
+        <option value="1">Number of Guests</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select><input type="submit">
     </div>
     <div id="tabs-3">
-      <p>Content 3</p>
+      <p>Search your Car</p><input type="text" placeholder="Pickup"><input type="date"><input type="time"><input type="text" placeholder="Return"><input type="date"><input type="time"><input type="submit" class="search" placeholder="Search">
     </div>
     <div id="tabs-4">
-      <p>Content 4</p>
+      <p>Search your Cruise</p><input type="text" placeholder="Departure"><input type="date"><input type="text" placeholder="Destination"><select title="Number of Travelers">
+        <option value="1">Number of Travelers</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select><input type="submit" placeholder="Search">
     </div>
     <div id="tabs-5">
-      <p>Content 5</p>
+      <p>Find New Adventures</p><input type="text" placeholder="Destination"><input type="date"><input type="date"><input type="submit" placeholder="Search">
     </div>
   </div>
-  <footer></footer>
+  <footer><p class="foot">© 2025, Valentina Miranda. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
 </wrapper>
 <script type="text/javascript">
 $(function() {
