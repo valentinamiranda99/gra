@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SVG Animations Using CSS</title>
+<style>
+body{
+	margin:0;
+	padding:0;
+	background-color:#CCC;
+	}
+wrapper{
+	width:100%;
+	max-width:1024px;
+	margin:0 auto;
+	display:block;
+	}
+header{
+	height:150px;
+	background-color:#19B5E3;
+	}
+main{
+	height:768px;
+	background-color:#FFF;
+	padding:4em 0;
+	box-sizing:border-box;
+	text-align:center;
+	}
+footer{
+	height:80px;
+	background-color:#19B5E3;
+	clear:both;
+	}
+	#level{
+		animation: charging 2s;
+		
+	}
+	@keyframes charging {
+		0%{
+			fill:red;
+			transform:scaleX(0);
+		}
+		100%{
+			fill:green;
+			transform:scaleX(1);
+		}
+	}
+	#capsule{
+		animation: spinning 2s;
+	}
+	@keyframes spinning {
+		0%{
+		transform:rotate(0deg);
+			transform-origin: center center;
+		}
+		100%{
+			transform: rotate(360deg);
+			transform-origin: center center;
+		}
+	}
+	#battery {
+		animation: moving 2s;
+	}
+	@keyframes moving {
+		0%{
+			transform: translateY(-25px);
+		}
+		100%{
+			transform: translateY(25px);
+		}
+	}
+</style>
+</head>
+
+<body>
+    <wrapper>
+        <header>
+        </header>
+                
+        <main>
+<svg id="battery" xmlns="http://www.w3.org/2000/svg" width="237" height="237" viewBox="0 0 237 237">
+  <rect width="237" height="237" fill="none"/>
+  <g id="capsule">
+    <rect id="level" x="7.58" y="90.5" width="198.88" height="56" fill="#7ac25b"/>
+    <path id="outline" d="M228.25,99.75h-11.46v-14.25H8.75v66h208.04v-14.25h11.46v-37.5ZM207.63,141.5H17.91v-46h189.71v46Z" fill="#231f20"/>
+  </g>
+</svg>
+        </main>
+        
+        <footer>
+        </footer>
+    </wrapper>
+</body>
+</html>
