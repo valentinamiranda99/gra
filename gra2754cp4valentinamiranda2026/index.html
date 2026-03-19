@@ -4,55 +4,93 @@
 <meta charset="utf-8">
 <title>gardening 101| valentina miranda, 2026</title>
 	<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <style type="text/css">
 body {
 	margin: 0;
-	background-color: rgba(255,214,215,1.00);
+	background-color: rgba(0,0,0,1.00);
 }
 wrapper {
 	width: 80%;
 	margin: auto;
 	display: block;
-	background-color: rgba(255,212,212,1.00);
+	background-color: rgba(0,0,0,1.00);
 }
 header {
 	height: 200px;
-	background-color: rgba(84,197,101,1.00);
+	background-image: url(BUENAVISTA.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 nav {
-	background-color: rgba(162,255,167,1.00);
+	background-color: rgba(63,105,47,1.00);
+	text-align: center;
 }
 nav ul a {
 	color: white;
 	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: bold;
 }
 ul a li {
 	padding: 10px;
 	list-style-type: none;
 }
 ul a li:hover {
-	background-color: rgba(243,119,255,1.00);
+	background-color: rgba(88,167,63,1.00);
 }
 nav ul {
 	padding: 0;
 	margin: 0;
+	list-style: none;
 }
-#about {
+	nav ul li {
+		display: inline-block;
+		margin: 0 20px;
+	}
+#About {
 	height: 600px;
-	background-color: rgba(174,246,255,1.00);
+	background-image: url(fondo3planta.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
-#gallery {
+#Gallery {
 	height: 600px;
-	background-color: rgba(37,195,192,1.00);
+	text-align: center;
+	background-image: url(fondo3planta.png);
+	background-size: cover;
+	background-position: center center;
 }
-#contact {
+#Contact {
 	height: 600px;
-	background-color: rgba(54,197,46,1.00);
+	background-image: url(fondo3planta.png);
+	background-position: center center;
+	background-size: cover;
 }
+	h1 {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	text-align: justify;
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFFFFF;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 0;
+	max-width: 800px;
+	}
 footer {
 	height: 200px;
-	background-color: rgba(174,172,255,1.00);
+	background-color: rgba(0,0,0,1.00);
 }
 	.topnav.responsive a{
     display:block;
@@ -78,6 +116,63 @@ footer {
 	padding:10px;
 		color:white;
 		
+}
+
+	h2{
+	font-family: "Montserrat", sans-serif;
+	font-size: 30px;
+	color: #FFFFFF;
+	text-align: center;
+	}
+#About img {
+	display: block;
+	margin: 20px auto;
+	width: 40%;
+	height: auto;
+}
+	p {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: bold;
+		margin: 0 auto;
+	padding: 0 20px;
+	max-width: 800px;
+	}
+#Gallery img {
+	width: 300px;
+	height: auto;
+	padding: 15px;
+	display: inline-block;
+}
+h3 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 30px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 20px;
+}
+#Contact img {
+	width: auto;
+	height: 300px;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 15px;
+}
+h4 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 30px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 20px;
+}
+p.footer {
+	font-family: "Montserrat", sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	text-align: justify;
+	padding-top: 20px;
 }
 @media (min-width:600px) {
 .topnav a:not(:first-child),.topnav.responsive a:not(:first-child) {
@@ -110,18 +205,34 @@ function myFunction() {
      onclick="myFunction()">
   <i class="fa fa-bars"></i><i class="fa fa-times"></i>
 	<ul>
-		<a href="#about"><li>about</li></a>
-		<a href="#gallery"><li>gallery</li></a>
-		<a href="#contact"><li>contact</li></a>
+		<a href="#About"><li>About</li></a>
+		<a href="#Gallery"><li>Gallery</li></a>
+		<a href="#Contact"><li>Contact</li></a>
 	</ul>
 	 </a>
   </nav>
-	 <div id="about"></div>
+	 <div id="About">
+	   <h1>
+   We specialize in providing professional landscaping services for both residential and commercial properties, tailored to meet each client’s unique needs. Our team combines experience, creativity, and attention to detail to design, install, and maintain outdoor spaces that are both beautiful and functional.
+</h1>
+	   <h2>Meet the team </h2>
+     <img src="theteam.jpg" alt="" width="1200" height="800">
+     <p>We want our team to be as passionate about lawn care as we are. By focusing on building up our team and our community, we desire to make South Florida more beautiful one yard at a time.</p>
+     </div>
 	
-  <section id="gallery"></section>
-  <section id="contact"></section>
+  <section id="Gallery">
+<h3>Residential Landscaping</h3>
+  <img src="opcion1patio.jpeg" alt="" width="4301" height="2867"><img src="opcion2patio.jpeg" alt="" width="4659" height="2611"><img src="opcion3patio.jpeg" alt="" width="4659" height="2611"><img src="opcion4.jpeg" alt="" width="5632" height="3072"><img src="opcion5.jpeg" alt="" width="5632" height="3072"><img src="Landscape-Lighting-Near-Me-1200x600.jpg" alt="" width="1200" height="600"> </section>
+<section id="Contact">
+<h4>Contact us</h4>
+<img src="660325a8c9f30db87a46428d_8-things-landscapers-should-know-before-buying-landscaping-workers-comp-social%20(2).jpg" alt="" width="1000" height="667">
+<p>Ready to transform your outdoor space? Whether you need routine lawn care or a complete landscaping makeover, BuenaVista Landscaping is here to help. Contact us today for a free estimate! We respond within 24 hours. You can reach us by phone at (954) 297-0252 or by email at bvlandscaping@gmail.com</p>
+</section>
 	
-<footer></footer>
+<footer>
+  <p class="footer">© 2026, Valentina Miranda
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+</footer>
 	
 </wrapper>
 </body>
