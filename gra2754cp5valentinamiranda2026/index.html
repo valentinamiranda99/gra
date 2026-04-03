@@ -22,15 +22,18 @@ function drop(ev) {
 body {
 	margin: 0;
 	background-color: #FFD8F0;
+	background-image: url(nubes.png);
 }
 wrapper  {
 	width: 1920px;
 	margin: auto;
 	display: block;
 }
+footer {
+}
 wrapper div {
 	width: 900px;
-	border: thin solid black;
+	border:hidden;
 	height: 600px;
 	margin-top: 25px;
 	margin-right: 25px;
@@ -40,24 +43,43 @@ wrapper div {
 	vertical-align: top;
 }
 div img {
-	width: 70%;
+	width: 60%;
 	height: auto;
 }
 h1 {
 	text-align: center;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	color: #FFFFFF;
+	color: deepskyblue;
+}
+#drop2 {
+	background-image: url(paisaje.png);
+	background-size: 900px 600px;
+	background-repeat: no-repeat;
+}
+#drop1 {
+	height: 500px;
+	width: 500px;
+}
+#drag2 {
+	height: 600px;
+	width: 600px;
+}
+.footer {
+	color: #0CB5FF;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	text-align: center;
 }
 </style>
 </head>
 
 <body>
-<h1>Your Dress Up Game!</h1>
+<h1>Hummingbird Nectar Hunt</h1>
 <wrapper>
-  <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src= "muneca.png" alt="" width="88" height="31" id="drag1" draggable="true" ondragstart="drag(event)"></div>
-  <div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
-  <div id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="ropamuneca.png" alt="" width="88" height="31" id="drag2" draggable="true" ondragstart="drag(event)"></div>
-  <div id="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="picaflor2.png" alt="" width="88" height="31" id="drag2" draggable="true" ondragstart="drag(event)"></div>
+<div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+
 </wrapper>
+		<footer class="footer"> © 2026, Valentina Miranda
+This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
 </body>
 </html>
